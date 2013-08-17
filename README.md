@@ -1,4 +1,0 @@
-jogo
-====
-
-Jogo Java
