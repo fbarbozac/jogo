@@ -14,7 +14,7 @@
 			this.pontos++;
 		}
 
-		void entraNome(String nome)
+		void setNome(String nome)
 		{
 			this.nome = nome;
 		}

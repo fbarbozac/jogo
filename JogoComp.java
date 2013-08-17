@@ -6,24 +6,21 @@
 
 class JogoComp
 {
-	public static void main(String[] args)
-	{
+	void executaJogo()
+	{	
 		java.io.Console c = System.console();
 
-		int numJog = 2;
-		Integer nJog[] = new Jogador();
-
 		Pergunta per = new Pergunta();
+		Jogador jog = new Jogador();
 		Resposta con = new Resposta();
-		Cronometro cro = new Cronometro();
-		//Jogador jog = new Jogador();
+		Cronometro cro = new Cronometro();		
 		Tela tel = new Tela();
-		
-		int rodadas = 10;
+		Integer rodadas = Integer.valueOf(c.readLine("Entre a qtd de rodadas: "));
 
-		jog[numJog].entraNome(c.readLine("Qual seu nome: "));
+		jog.setNome(c.readLine("Qual seu nome: "));
 
 		cro.inicia();
+
 		while(rodadas > 0)
 		{
 			per.escolheOper();
