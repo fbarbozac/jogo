@@ -1,19 +1,25 @@
 /*
-	Author: Guilherme & Fernando 
+	Authors: Guilherme & Fernando 
 	Date: 10/Ago/2013
 	Description: Implementation of a kinf of quiz game in Java.
 */
 
 class Tela
 {
-	void imprimePontos(String nome, int pontos, long t)
+	private java.io.Console c = System.console();
+
+	void imprime(String ... str)
 	{
-		System.out.printf("Resultado:\n\t%s, você fez %s pontos em "+
-						 "%s segundos\n", nome, pontos, t);
+		String temp = "";
+		for(int i=0; i<str.length; i++ )
+		{
+			temp +=str[i]+" ";
+		}	
+		System.out.printf("%s", temp);
 	}
 
-	void imprimePergunta(int p1, int p2, String frase)
+	String imprimeEle(String str)
 	{
-		System.out.printf(" %s %s %s ?\n", p1, frase, p2);
+		return c.readLine(str);
 	}
 }

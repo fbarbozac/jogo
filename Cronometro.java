@@ -1,26 +1,26 @@
 /*
-	Author: Guilherme & Fernando 
+	Authors: Guilherme & Fernando 
 	Date: 10/Ago/2013
 	Description: Implementation of a kinf of quiz game in Java.
 */
 
 class Cronometro 
 {
-	java.util.Date tempoInicial;
+	private java.util.Date tempoInicial;
 
 	void inicia()
 	{
 		tempoInicial = new java.util.Date();
 	}
 	
-	long msPercorrido() 
+	long getMsPercorrido() 
 	{
 		java.util.Date tempoFinal = new java.util.Date();
 		return (tempoFinal.getTime() - tempoInicial.getTime());
 	}
 
-	long sPercorrido() 
+	long getSPercorrido() 
 	{
-		return (msPercorrido() / 1000);
+		return (getMsPercorrido() / 1000);
 	}
 }

@@ -1,5 +1,5 @@
 /*
-	Author: Guilherme & Fernando 
+	Authors: Guilherme & Fernando 
 	Date: 10/Ago/2013
 	Description: Implementation of a kinf of quiz game in Java.
 */
